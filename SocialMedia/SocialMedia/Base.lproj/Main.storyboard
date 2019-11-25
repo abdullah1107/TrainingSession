@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9rX-bT-dVv">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SocialMedia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lwV-3x-sLU">
+                                <rect key="frame" x="0.0" y="108" width="375" height="133.5"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ySq-KC-mze">
+                                        <rect key="frame" x="0.0" y="0.0" width="124" height="133.5"/>
+                                        <state key="normal" title="gmail"/>
+                                        <connections>
+                                            <action selector="socilamedabuttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EAG-HU-5bs"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kvO-3K-mVo">
+                                        <rect key="frame" x="124" y="0.0" width="123.5" height="133.5"/>
+                                        <state key="normal" title="youtube"/>
+                                        <connections>
+                                            <action selector="socilamedabuttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1UW-ij-GIS"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="kvO-3K-mVo" firstAttribute="width" secondItem="lwV-3x-sLU" secondAttribute="width" multiplier="0.33" id="3On-yI-psU"/>
+                                    <constraint firstItem="ySq-KC-mze" firstAttribute="leading" secondItem="lwV-3x-sLU" secondAttribute="leading" id="Nli-we-6zt"/>
+                                    <constraint firstItem="kvO-3K-mVo" firstAttribute="top" secondItem="lwV-3x-sLU" secondAttribute="top" id="nui-t2-46M"/>
+                                    <constraint firstItem="ySq-KC-mze" firstAttribute="top" secondItem="lwV-3x-sLU" secondAttribute="top" id="oqy-6W-HVh"/>
+                                    <constraint firstAttribute="bottom" secondItem="kvO-3K-mVo" secondAttribute="bottom" id="p0T-kM-hkb"/>
+                                    <constraint firstItem="kvO-3K-mVo" firstAttribute="leading" secondItem="ySq-KC-mze" secondAttribute="trailing" id="ujg-Hr-qyP"/>
+                                    <constraint firstItem="ySq-KC-mze" firstAttribute="width" secondItem="lwV-3x-sLU" secondAttribute="width" multiplier="0.33" id="vT9-cT-SBL"/>
+                                    <constraint firstAttribute="bottom" secondItem="ySq-KC-mze" secondAttribute="bottom" id="ymN-oE-O8O"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lwV-3x-sLU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="Jom-en-yZf"/>
+                            <constraint firstItem="lwV-3x-sLU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RMY-v9-jCA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lwV-3x-sLU" secondAttribute="trailing" id="ifW-CZ-ipk"/>
+                            <constraint firstItem="lwV-3x-sLU" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.2" id="jNh-5m-OCF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Y9g-aS-VjW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1481" y="-282"/>
+        </scene>
+        <!--Webtemplate View Controller-->
+        <scene sceneID="LHZ-Y7-e51">
+            <objects>
+                <viewController storyboardIdentifier="WebtemplateViewController" id="57H-c6-utj" customClass="WebtemplateViewController" customModule="SocialMedia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KXq-c3-GQU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UeU-W0-Lyg">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UeU-W0-Lyg" firstAttribute="top" secondItem="VKV-pF-LFj" secondAttribute="top" constant="44" id="1rM-UC-YpA"/>
+                            <constraint firstItem="UeU-W0-Lyg" firstAttribute="leading" secondItem="VKV-pF-LFj" secondAttribute="leading" id="6rh-qA-uWT"/>
+                            <constraint firstItem="VKV-pF-LFj" firstAttribute="bottom" secondItem="UeU-W0-Lyg" secondAttribute="bottom" id="8rg-kP-et3"/>
+                            <constraint firstItem="VKV-pF-LFj" firstAttribute="trailing" secondItem="UeU-W0-Lyg" secondAttribute="trailing" id="Wzt-sS-zeE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VKV-pF-LFj"/>
+                    </view>
+                    <connections>
+                        <outlet property="templateWeb" destination="UeU-W0-Lyg" id="6yI-GV-rp1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bHs-hm-02g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2103" y="99"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QAm-Ys-6Os">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9rX-bT-dVv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2kD-qA-kx8">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="xf5-oZ-1Io"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s9h-od-Hx3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="737" y="36"/>
+        </scene>
+    </scenes>
+</document>

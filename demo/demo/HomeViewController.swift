@@ -13,9 +13,10 @@ class HomeViewController: UIViewController,UITableViewDataSource, UITableViewDel
     
 
     var mylist = ["hello1","hello2","hello3","Fahim", "Zahid", "Rafi", "Faisal"]
-    var mylist1 = ["hello1","hello2","hello3","Fahim", "Zahid", "Rafi", "Faisal"]
+    var mylist1 = ["hello1","hello2","hello3","Fahim"]
     var dynamicArray = [String]()
     
+    var isit:Int?
     
     @IBOutlet weak var customtableView: UITableView!
     
@@ -25,8 +26,19 @@ class HomeViewController: UIViewController,UITableViewDataSource, UITableViewDel
       
         customtableView.dataSource = self
         customtableView.delegate = self
-       
+        configurearray()
         //load_fromServer()
+    }
+    
+    func configurearray(){
+        
+        for i in 0..<mylist.count{
+           // dynamicArray.append()
+        }
+        
+        print(mylist1.count)
+        print(mylist.count)
+        
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return mylist.count
@@ -36,11 +48,11 @@ class HomeViewController: UIViewController,UITableViewDataSource, UITableViewDel
 
         let cell:CustomTableViewCell = self.customtableView.dequeueReusableCell(withIdentifier: "fahim") as! CustomTableViewCell
 
-
-        //print("number:", indexPath.row)
-       // print(mylist[indexPath.row])
-        cell.mycustomlabel.text = mylist[indexPath.row]
-        cell.secondCustomLabel.text = mylist1[indexPath.row]
+       cell.mycustomlabel.text = mylist[indexPath.row]
+        //let album = mylist1[indexPath.row]
+        //cell.secondCustomLabel?.text = mylist1[indexPath.row]
+        
+       
 
 
         return cell
