@@ -1,2 +1,2 @@
 # TrainingSession
-This is training for iOS development
+simple iOS training content
